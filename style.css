@@ -1,0 +1,84 @@
+:root {
+  --font: "Montserrat", sans-serif;
+  --dark-cyan: hsl(158, 36%, 37%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --cream: hsl(30, 38%, 92%);
+}
+
+body {
+  background: var(--cream);
+  font-size: 14px;
+}
+body * {
+  max-width: 375px;
+}
+
+.card {
+  background: var(--white);
+  max-width: 375px;
+  margin: 50px auto;
+  border-radius: 20px;
+}
+.card .desk-img {
+  display: none;
+}
+.card .left {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 375px;
+}
+.card .content {
+  color: hsl(228deg, 12%, 48%);
+  margin: auto;
+  padding: 20px;
+}
+.card .content .head {
+  font-family: var(--font);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.card .content .headBold {
+  font-weight: bold;
+  color: black;
+}
+.card .content p {
+  font-family: var(--font);
+}
+.card .content .weight {
+  font-family: serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--dark-cyan);
+  margin-right: 20px;
+}
+.card .content .btn {
+  text-align: center;
+  background: var(--dark-cyan);
+  padding: 20px;
+  border-radius: 10px;
+}
+.card .content .btn .btn-link {
+  text-decoration: none;
+  color: var(--white);
+}
+.card .content .btn:hover {
+  background-color: var(--dark-grayish-blue);
+}
+@media (min-width: 768px) {
+  .card .card {
+    display: flex;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .card .card .desk-img {
+    display: block;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .card .card .left {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
